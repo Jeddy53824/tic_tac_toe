@@ -30,46 +30,34 @@ def game():
         else:
             print("That place is taken. Pick again.")
             continue
+        def win():
+            show_board(the_board)
+            print(turn + " wins!!")
+            print("GAME OVER")
         if count >=5:
             if the_board["7"] == the_board["8"] == the_board["9"] != " ":
-                show_board(the_board)
-                print(turn + " wins!!")
-                print("GAME OVER")
+                win()
                 break
             elif the_board["4"] == the_board["5"] == the_board["6"] != " ":
-                show_board(the_board)
-                print(turn + " wins!!")
-                print("GAME OVER")
+                win()
                 break
             elif the_board["1"] == the_board["2"] == the_board["3"] != " ":
-                show_board(the_board)
-                print(turn + " wins!!")
-                print("GAME OVER")
+                win()
                 break
             elif the_board["7"] == the_board["4"] == the_board["1"] != " ":
-                show_board(the_board)
-                print(turn + " wins!!")
-                print("GAME OVER")
+                win()
                 break
             elif the_board["8"] == the_board["5"] == the_board["2"] != " ":
-                show_board(the_board)
-                print(turn + " wins!!")
-                print("GAME OVER")
+                win()
                 break
             elif the_board["9"] == the_board["6"] == the_board["3"] != " ":
-                show_board(the_board)
-                print(turn + " wins!!")
-                print("GAME OVER")
+                win()
                 break
             elif the_board["7"] == the_board["5"] == the_board["3"] != " ":
-                show_board(the_board)
-                print(turn + " wins!!")
-                print("GAME OVER")
+                win()
                 break
             elif the_board["9"] == the_board["5"] == the_board["1"] != " ":
-                show_board(the_board)
-                print(turn + " wins!!")
-                print("GAME OVER")
+                win()
                 break
         if count == 9:
             show_board(the_board)
